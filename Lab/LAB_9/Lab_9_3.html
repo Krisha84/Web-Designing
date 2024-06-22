@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			height: 95vh;
+			width: 95%;
+			border: 1px solid black;
+			position: relative;
+		}
+		.c1{
+			height: 10%;
+			width: 5%;
+			border-radius: 100%;
+			background-color: pink;
+			animation-name: first;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+			position: relative;
+			animation-iteration-count: infinite;
+		}
+		.c2{
+			height: 10%;
+			width: 5%;
+			border-radius: 100%;
+			background-color: red;
+			animation-name: second;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+			position: absolute;
+			animation-iteration-count: infinite;
+		}
+		.c3{
+			height: 10%;
+			width: 5%;
+			border-radius: 100%;
+			background-color: red;
+			animation-name: third;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+			position: absolute;
+			animation-iteration-count: infinite;
+		}
+		.c4{
+			height: 10%;
+			width: 5%;
+			border-radius: 100%;
+			background-color: blue;
+			animation-name: four;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+			position: absolute;
+			animation-iteration-count: infinite;
+		}
+		.c5{
+			height: 10%;
+			width: 5%;
+			border-radius: 100%;
+			background-color: blue;
+			animation-name: five;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+			position: absolute;
+			animation-iteration-count: infinite;
+		}
+		@keyframes first{
+			0%{
+				top: 45%;
+				left: 0%;
+			}
+			25%{
+				top: 45%;
+				left: 95%;
+			}
+			50%{
+				top: 45%;
+				left: 45%;
+			}
+			75%{
+				top: 45%;
+				left: 0%;
+			}
+			100%{
+				top: 45%;
+				left: 45%;
+			}
+		}
+		@keyframes second{
+			0%{
+				top: 45%;
+				left: 0%;
+			}
+			25%{
+				top: 45%;
+				left: 95%;
+			}
+			50%{
+				top: 0%;
+				left: 45%;
+			}
+			75%{
+				top: 45%;
+				left: 0%;
+			}
+			100%{
+				top: 45%;
+				left: 45%;
+			}
+		}
+		@keyframes third{
+			0%{
+				top: 45%;
+				left: 0%;
+			}
+			25%{
+				top: 45%;
+				left: 95%;
+			}
+			50%{
+				top: 95%;
+				left: 45%;
+			}
+			75%{
+				top: 45%;
+				left: 0%;
+			}
+			100%{
+				top: 45%;
+				left: 45%;
+			}
+		}
+		@keyframes four{
+			0%{
+				top: 45%;
+				left: 0%;
+			}
+			25%{
+				top: 45%;
+				left: 95%;
+			}
+			50%{
+				top: 0%;
+				left: 45%;
+			}
+			75%{
+				top: 45%;
+				left: 95%;
+			}
+			100%{
+				top: 45%;
+				left: 45%;
+			}
+		}
+		@keyframes five{
+			0%{
+				top: 45%;
+				left: 0%;
+			}
+			25%{
+				top: 45%;
+				left: 95%;
+			}
+			50%{
+				top: 95%;
+				left: 45%;
+			}
+			75%{
+				top: 45%;
+				left: 95%;
+			}
+			100%{
+				top: 45%;
+				left: 45%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="c1"></div>
+	<div class="c2"></div>
+	<div class="c3"></div>
+	<div class="c4"></div>
+	<div class="c5"></div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			height: 90vh;
+			width: 95%;
+			border: 1px solid black;
+			position: relative;
+		}
+		.ani{
+			height: 20%;
+			border-radius: 100%;
+			width: 10%;
+			background-color: red;
+			animation-name: myAni;
+			position: absolute;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+		}
+		@keyframes myAni{
+			0%{
+				top: 0%;
+				left: 0%;
+			}
+			10%{
+				top: 80%;
+				left: 20%;
+			}
+			20%{
+				top: 0%;
+				left: 40%;
+			}
+			30%{
+				top: 80%;
+				left: 60%;
+			}
+			40%{
+				top: 0%;
+				left: 80%;
+			}
+			50%{
+				top: 40%;
+				left: 90%;
+			}
+			60%{
+				top: 80%;
+				left: 70%;
+			}
+			70%{
+				top: 0%;
+				left: 50%;
+			}
+			80%{
+				top: 80%;
+				left: 30%;
+			}
+			90%{
+				top: 0%;
+				left: 0%;
+			}
+			100%{
+				top: 0%;
+				left: 0%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="ani"></div>
+</body>
+</html>
